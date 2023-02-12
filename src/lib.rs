@@ -1,5 +1,5 @@
-//! The crate implements priority matrix that supports per-row and
-//! per-column maximum key queries.
+//! The Rust crate implements the matrix data structure that supports
+//! per-row, per-column and whole-matrix maximum key queries.
 //!
 //! ```rust
 //! use priority_matrix::PriorityMatrix;
