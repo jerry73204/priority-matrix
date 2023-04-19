@@ -212,6 +212,23 @@ where
             iter: self.entries.iter(),
         }
     }
+
+    /// Returns the number of elements of this matrix.
+    pub fn len(&self) -> usize {
+        self.entries.len()
+    }
+
+    pub fn is_empty(&self) -> bool {
+        self.entries.is_empty()
+    }
+
+    pub fn row_keys(&self) -> impl Iterator<Item = &R> {
+        self.rows.keys()
+    }
+
+    pub fn column_keys(&self) -> impl Iterator<Item = &C> {
+        self.cols.keys()
+    }
 }
 
 impl<R, C, W> Default for PriorityMatrix<R, C, W>
